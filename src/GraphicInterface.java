@@ -22,6 +22,7 @@ public class GraphicInterface extends JPanel {
 	int ballYCoordinate=0;
 	
 	public void paint(Graphics g){
+		super.paint(g);
 		
 		// Gets the size of the graphics panel to know be able to draw the rectangle and the ball
 		panelWidth = getWidth();
