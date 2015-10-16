@@ -5,7 +5,7 @@
  * Assignment number: 3
  * Due date:          Oct 18, 2015
  * Title:             Animation
- * Purpose:           
+ * Purpose:           Sets up the window and runs the program
  * This file name:    AnimationDriver.java
 */
 
