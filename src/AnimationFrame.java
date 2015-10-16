@@ -116,7 +116,7 @@ public class AnimationFrame extends JFrame {
 						
 						// Handles if a negative is inputted
 						if (delayInterval < 0){
-							delayInterval = 1;
+							delayInterval = delayInterval * -1;
 						}
 					}catch(ArithmeticException e){
 						// Handles if a 0 is inputted
