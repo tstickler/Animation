@@ -18,8 +18,8 @@ public class GraphicInterface extends JPanel {
 	int panelHeight;
 	final int ballSize = 24;
 	final int lineSize = 1;
-	int ballXCoordinate=0;
-	int ballYCoordinate=0;
+	int ballXCoordinate = 0;
+	int ballYCoordinate = 0;
 	
 	public void paint(Graphics g){
 		super.paint(g);

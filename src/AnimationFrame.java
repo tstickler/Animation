@@ -155,7 +155,8 @@ public class AnimationFrame extends JFrame {
 			}
 			// Happens if you click the exit button
 			if(event.getSource() == exitButton){
-				// Closes the program
+				// Pauses the clock and closes the program
+				clock.stop();
 				System.exit(0);
 			}
 		}// End actionPerformed
