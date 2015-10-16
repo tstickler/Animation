@@ -57,7 +57,7 @@ public class AnimationFrame extends JFrame {
 		// Add the graphics panel to the frame.
 		add(graphicsPanel, BorderLayout.CENTER);
 		
-		// Attach the buttons and speed compnents to their panel.
+		// Attach the buttons and speed components to their panel.
 		addItem(buttonsPanel, speedLabel, 0, 0, 1, 1, GridBagConstraints.EAST, GridBagConstraints.NONE);
 		addItem(buttonsPanel, speedField, 1, 0, 1, 1, GridBagConstraints.WEST, GridBagConstraints.NONE);
 		addItem(buttonsPanel, goButton, 0, 1, 1, 1, GridBagConstraints.EAST, GridBagConstraints.NONE);
@@ -79,7 +79,7 @@ public class AnimationFrame extends JFrame {
 		addItem(bottomPanel, outputPanel, 1, 0, 1, 1, GridBagConstraints.CENTER, GridBagConstraints.NONE);
 		add(bottomPanel, BorderLayout.SOUTH);
 		
-		// Set up button and clock for interactability.
+		// Set up button and clock for intractability.
 		goButton.addActionListener(buttonHandler);
 		resetButton.addActionListener(buttonHandler);
 		exitButton.addActionListener(buttonHandler);
@@ -143,7 +143,7 @@ public class AnimationFrame extends JFrame {
 			}
 			// Happens if you click the reset button.
 			if(event.getSource() == resetButton) {
-				// The clock stops so the ball stops moving and all items are reset to intial positions.
+				// The clock stops so the ball stops moving and all items are reset to initial positions.
 				clock.stop();
 				goButton.setText("Go");
 				speedField.setText("");
