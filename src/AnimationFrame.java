@@ -28,7 +28,7 @@ public class AnimationFrame extends JFrame {
 	ButtonHandler buttonHandler = new ButtonHandler();
 	ClockHandler clockHandler = new ClockHandler();
 	Timer clock;
-	int delayInterval = 0;
+	int delayInterval = 1;
 	
 	public AnimationFrame() {
 		titlePanel.add(titleLabel);
@@ -86,9 +86,9 @@ public class AnimationFrame extends JFrame {
 					try{
 						delayInterval = 1000 / Integer.parseInt(speedField.getText());
 					}catch(ArithmeticException e){
-						delayInterval = 0;
+						delayInterval = 1;
 					}catch(NumberFormatException e){
-						delayInterval = 0;
+						delayInterval = 1;
 					}
 					clock.setDelay(delayInterval);
 					clock.start();
